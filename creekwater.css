@@ -819,6 +819,7 @@ footer h6 {
   font-size: 0.9em;
   color: white;
   transition: all 0.5s;
+  line-height: 1.5em;
 }
 
 #txt #margin {
