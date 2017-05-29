@@ -1,0 +1,858 @@
+/*-------HOME-PAGE-------*/
+
+body {
+  background-color: rgba(0,0,0,1);
+  font-family: 'EB Garamond', serif;
+  background-image: url(img/wood.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*header*/
+
+header {
+  width: 100%;
+  height: 150px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+#coverHeader {
+  width: 100%;
+  height: 150px;
+  background-color: rgba(0,0,0,0.8);
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+#CWlogo {
+  height: 150px;
+  width: 30%;
+  float: left;
+  background-image: url(img/logoW.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  box-sizing: border-box;
+  margin-left: 4%;
+  transition: all 0.5s;
+}
+
+#nav {
+  width: 54%;
+  height: 150px;
+  float: left;
+  margin: 0 auto 0 auto;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+header ul {
+  list-style-type: none;
+  transition: all 0.5s;
+}
+
+header li {
+  float: left;
+  box-sizing: border-box;
+  width: 25%;
+  transition: all 0.5s;
+}
+
+header a {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 59px 0% 59px 0%;
+  font-size: 2em;
+  transition: all 0.5s;
+}
+
+#home header li:nth-child(1) {
+    background: rgba(0, 178, 214, 0.25);
+    border-bottom: 1px solid rgb(0, 178, 214);
+}
+
+#home header li:nth-child(2):hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid white;
+}
+
+#home header li:nth-child(3):hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid white;
+}
+
+#button {
+  width: 10%;
+  height: 100px;
+  float: right;
+  box-sizing: border-box;
+  padding: 2%;
+  margin-right: 2%;
+  margin-top: 25px;
+  background-image: url(img/sun.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  backface-visibility: hidden;
+  transition: all 0.5s;
+}
+
+#button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+/*main*/
+
+main {
+  width: 100%;
+  min-height: 600px;
+  overflow: auto;
+  background-color: rgba(0,0,0, 0.9);
+  margin: 0 auto 0 auto;
+  box-sizing: border-box;
+  padding: 2%;
+  transition: all 0.5s;
+}
+
+.bands {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 2%;
+}
+
+.field h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.5s;
+}
+
+.field p {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: white;
+  transition: all 0.5s;
+}
+
+.field h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  color: #00b2d6;
+  transition: all 0.5s;
+}
+
+#home .field h3 {
+  margin-bottom: 25px;
+}
+
+#home .field p {
+  line-height: 1.5em;
+}
+
+/*iframe*/
+
+#iframe {
+  text-align: center;
+}
+
+#iframe h4 {
+  font-family: 'EB Garamond', serif;
+  color: white;
+  font-size: 1.8em;
+  margin-bottom: 1%;
+}
+
+iframe {
+  margin: 0 auto 0 auto;
+  transition: all 0.5s;
+  border: 5px solid white;
+}
+
+/*footer*/
+
+footer {
+  width: 100%;
+  height: 200px;
+  transition: all 0.5s;
+}
+
+#coverFooter {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(0,0,0,0.8);
+  transition: all 0.5s;
+}
+
+footer h5 {
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  transition: all 0.5s;
+}
+
+footer h6 {
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  color: #00b2d6;
+  transition: all 0.5s;
+}
+
+
+/*FLIPPING SQUARES*/
+/*Thx Kristof Michiels*/
+
+.field {
+  padding: 20px;
+  width: 48%;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 1%;
+  transition: all 0.5s;
+}
+
+.field ul {
+  clear: both;
+  transition: all 0.5s;
+}
+
+.field li {
+  width: 200px;
+  height: 200px;
+  margin-right: 25px;
+  float: left;
+  position: relative;
+  perspective: 800px;
+  transition: all 0.5s;
+}
+
+.field li:nth-child(4), li:nth-child(8){
+  margin-right: 0;
+}
+
+.field ul a {
+  display: block;
+  font-size: 1.25em;
+  letter-spacing: 3px;
+  text-align: center;
+  width: 200px;
+  height: 120px;
+  color: rgb(25,25,25);
+  padding-top: 80px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.field ul .back a {
+  font-size: 0.8em;
+  padding-top: 20px;
+  height: 180px;
+  transition: all 0.5s;
+}
+
+.field ul .back a span {
+  font-size: 1.25em;
+  display: block;
+  height: 140px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 180px;
+  font-weight: 400;
+  line-height: 1.45em;
+  transition: all 0.5s;
+}
+
+#region1 .c1 {
+  background-color: #F3F3F3;
+}
+
+.front {
+  background-image: url(img/wood.jpg);
+  background-size: cover;
+}
+
+.tile {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+          transition: transform 1s;
+}
+
+.tile figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.tile .back {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.tile:hover {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+/*ALBUMS ILIAN*/
+
+#logo2 {
+  background-image: url(img/BU_logo.jpg);
+  background-size: cover;
+}
+
+#een {
+  background-image: url(img/BU1_front.jpg);
+  background-size: cover;
+}
+
+#een2 {
+  background-image: url(img/BU1_back.jpg);
+  background-size: cover;
+}
+
+#twee {
+  background-image: url(img/BU2_front.jpg);
+  background-size: cover;
+}
+
+#twee2 {
+  background-image: url(img/BU2_back.jpg);
+  background-size: cover;
+}
+
+#drie {
+  background-image: url(img/BU3_front.jpg);
+  background-size: cover;
+}
+
+#drie2 {
+  background-image: url(img/BU3_back.jpg);
+  background-size: cover;
+}
+
+#vier {
+  background-image: url(img/BU4_front.jpg);
+  background-size: cover;
+}
+
+#vier2 {
+  background-image: url(img/BU4_back.jpg);
+  background-size: cover;
+}
+
+/*ALBUMS VINCENT*/
+
+#logo3 {
+  background-image: url(img/ST_logo.jpg);
+  background-size: cover;
+}
+
+#vijf {
+  background-image: url(img/ST1_front.jpg);
+  background-size: cover;
+}
+
+#vijf2 {
+  background-image: url(img/ST1_back.jpg);
+  background-size: cover;
+}
+
+#zes {
+  background-image: url(img/ST2_front.jpg);
+  background-size: cover;
+}
+
+#zes2 {
+  background-image: url(img/ST2_back.jpg);
+  background-size: cover;
+}
+
+#zeven {
+  background-image: url(img/ST3_front.jpg);
+  background-size: cover;
+}
+
+#zeven2 {
+  background-image: url(img/ST3_back.jpg);
+  background-size: cover;
+}
+
+#acht {
+  background-image: url(img/ST4_front.jpg);
+  background-size: cover;
+}
+
+#acht2 {
+  background-image: url(img/ST4_back.jpg);
+  background-size: cover;
+}
+
+/*ALBUMS LAURA*/
+
+#logo1 {
+  background-image: url(img/AF_logo.jpg);
+  background-size: cover;
+}
+
+#negen {
+  background-image: url(img/AF1_front.jpg);
+  background-size: cover;
+}
+
+#negen2 {
+  background-image: url(img/AF1_back.jpg);
+  background-size: cover;
+}
+
+#tien {
+  background-image: url(img/AF2_front.jpg);
+  background-size: cover;
+}
+
+#tien2 {
+  background-image: url(img/AF2_back.jpg);
+  background-size: cover;
+}
+
+#elf {
+  background-image: url(img/AF3_front.jpg);
+  background-size: cover;
+}
+
+#elf2 {
+  background-image: url(img/AF3_back.jpg);
+  background-size: cover;
+}
+
+#twaalf {
+  background-image: url(img/AF4_front.jpg);
+  background-size: cover;
+}
+
+#twaalf2 {
+  background-image: url(img/AF4_back.jpg);
+  background-size: cover;
+}
+
+/*ALBUMS HANNE*/
+
+#logo4 {
+  background-image: url(img/WT_logo.jpg);
+  background-size: cover;
+}
+
+#dertien {
+  background-image: url(img/WT1_front.jpg);
+  background-size: cover;
+}
+
+#dertien2 {
+  background-image: url(img/WT1_back.jpg);
+  background-size: cover;
+}
+
+#veertien {
+  background-image: url(img/WT2_front.jpg);
+  background-size: cover;
+}
+
+#veertien2 {
+  background-image: url(img/WT2_back.jpg);
+  background-size: cover;
+}
+
+#vijftien {
+  background-image: url(img/WT3_front.jpg);
+  background-size: cover;
+}
+
+#vijftien2 {
+  background-image: url(img/WT3_back.jpg);
+  background-size: cover;
+}
+
+#zestien {
+  background-image: url(img/WT4_front.jpg);
+  background-size: cover;
+}
+
+#zestien2 {
+  background-image: url(img/WT4_back.jpg);
+  background-size: cover;
+}
+
+/*daymode*/
+
+.day main {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.day #CWlogo {
+  background-image: url(img/logoZ.png);
+}
+
+.day #button {
+  background-image: url(img/moon.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+.day footer {
+
+}
+
+.day #coverHeader, .day #coverFooter {
+  background-color: rgba(255,255,255,0.8);
+}
+
+.day footer h5 {
+  color: black;
+  font-weight: bold;
+}
+
+.day footer h6 {
+  color: black;
+  font-weight: bold;
+}
+
+.day #region1 .c1 {
+  background-color: rgb(25,25,25);
+}
+
+.day #region1 a {
+  color: white;
+}
+
+.day header li a {
+  color: rgb(25,25,25);
+  font-weight: bold;
+}
+
+.day header li:hover {
+  border-bottom: 1px solid rgb(25,25,25);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.day .field h2, .day .field p {
+  color: rgb(25,25,25);
+  font-weight: bold;
+}
+
+.day .field h3 {
+  font-weight: bold;
+}
+
+.day #iframe h4 {
+  color: rgb(25,25,25);
+  font-weight: bold;
+}
+
+.day iframe {
+  border: 5px solid rgb(25,25,25);
+}
+
+
+/*MEDIA QUARIES*/
+
+@media (max-width: 1000px) {
+
+  header {
+    height: 242px;
+  }
+
+  #coverHeader {
+    height: 242px;
+  }
+
+  #CWlogo {
+    height: 150px;
+    width: 50%;
+    margin: 0 auto 0 6%;
+    background-size: 200px;
+    background-position: left center;
+  }
+
+  #nav {
+    width: 85%;
+    height: 92px;
+  }
+
+  header li a {
+    padding: 30px 0% 30px 0%;
+    font-size: 1.8em;
+  }
+
+  #button {
+    width: 10%;
+    height: 50px;
+    float: left;
+    margin-right: 2%;
+    margin-top: 25px;
+    background-size: 35px;
+  }
+
+  .day #button {
+    background-size: 35px;
+  }
+
+  .bands {
+    height: 1000px;
+  }
+
+  .field {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 1%;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  header {
+    height: 285px;
+  }
+
+  main {
+    padding: 5%;
+  }
+
+  #coverHeader {
+    height: 285px;
+  }
+
+  #CWlogo {
+    height: 100px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    background-size: 150px;
+    background-position: center center;
+  }
+
+  #nav {
+    width: 100%;
+    height: 92px;
+    clear: both;
+  }
+
+  header li {
+    width: 100%;
+  }
+
+  header li a {
+    padding: 10px 0% 10px 0%;
+    font-size: 1.5em;
+  }
+
+  #button {
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    background-size: 30px;
+  }
+
+  .day #button {
+    background-size: 30px;
+  }
+
+  .bands {
+    height: 1350px;
+  }
+
+  iframe {
+    width: 300px;
+  }
+
+  .field {
+    padding: 10px;
+    width: 100%;
+    margin: 0%;
+  }
+
+  .field h2 {
+    margin: 220px 0 10px 0;
+  }
+
+}
+
+/*-------STORE-PAGE-------*/
+
+#store .field {
+  padding: 20px;
+  width: 24%;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 1%;
+  transition: all 0.5s;
+}
+
+#store header li:nth-child(2) {
+  background: rgba(0, 178, 214, 0.25);
+  border-bottom: 1px solid rgb(0, 178, 214);
+}
+
+#store header li:nth-child(1):hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid white;
+}
+
+#store header li:nth-child(3):hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid white;
+}
+
+#store .field h3:hover {
+  cursor: pointer;
+}
+
+/*STORE PAGE MEDIA QUERIES*/
+
+@media (max-width: 1650px) {
+
+  #store .field h2 {
+    margin: 220px 0 10px 0;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  #store .field {
+    padding: 20px;
+    width: 49%;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 1%;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  #store .field {
+    padding: 10px;
+    width: 100%;
+    margin-right: 0%;
+  }
+
+  #store main {
+    padding: 17%;
+  }
+
+}
+
+/*-------ABOUT-PAGE-------*/
+
+#about header li:nth-child(3) {
+    background: rgba(0, 178, 214, 0.25);
+    border-bottom: 1px solid rgb(0, 178, 214);
+}
+
+#about header li:nth-child(1):hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid white;
+}
+
+#about header li:nth-child(2):hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid white;
+}
+
+#about main {
+  min-height: 601px;
+}
+
+#txt {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
+#txt h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.5s;
+}
+
+#txt span {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: white;
+  transition: all 0.5s;
+  color: rgb(0, 178, 214);
+  font-weight: bold;
+}
+
+#txt p {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: white;
+  transition: all 0.5s;
+}
+
+#txt #margin {
+  margin-bottom: 50px;
+}
+
+.day #txt h2 {
+  color: black;
+}
+
+.day #txt p {
+  color: black;
+}
+
+
+/*ABOUT PAGE MEDIA QUERIES*/
+
+@media (max-width: 1650px) {
+
+
+}
+
+@media (max-width: 1000px) {
+
+
+}
+
+@media (max-width: 550px) {
+
+  #txt {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+  }
+
+}
